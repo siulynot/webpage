@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%;
+}
+
+.navbar {
+  background-color: #5c9abe !important;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  color: white !important; /* To maintain the white color of the text */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  max-height: 50px; /* Adjust this value as needed */
+  width: auto; /* This should maintain the aspect ratio of the logo */
+  margin-right: 10px; /* To add some space between the logo and the text */
+}
+
+.brand-text {
+  color: white !important; /* Ensuring the text color remains white */
+}
+
+
+.navbar .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(92,154,190,0.3);
+  height: auto;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* This will add a bit of shadow to your text, improving readability */
+  border-radius: 15px; /* Rounded borders for the text background */
+  animation: fadeIn 2s; /* Fade in text */
+}
+
+.carousel-caption h5 {
+  color: white !important;
+  font-size: 2em; /* Larger font size */
+  font-weight: bold; /* Bold font weight */
+  text-transform: uppercase; /* Transform the text to uppercase */
+  margin-bottom: 15px; /* Space between title and paragraph */
+}
+
+.carousel-caption p {
+  color: white !important;
+  font-size: 1.2em; /* Slightly larger font size */
+  line-height: 1.5; /* Improved readability for the paragraph */
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white !important; /* Matches the color of the carousel caption h5 */
+  font-size: 2em; /* Matches the font size of the carousel caption h5 */
+  font-weight: bold; /* Matches the font weight of the carousel caption h5 */
+  text-transform: uppercase; /* Matches the text transform of the carousel caption h5 */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Matches the text shadow of the carousel caption */
+}
+
+
+.card {
+  border-radius: 15px; /* Add this */
+  margin-bottom: 20px;
+  overflow: hidden; /* Add this to ensure the inner elements do not protrude */
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.fade-in-element {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+.card-title {
+  color: white !important; /* Matches the color of the carousel caption h5 */
+  font-size: 2em; /* Matches the font size of the carousel caption h5 */
+  font-weight: bold; /* Matches the font weight of the carousel caption h5 */
+  text-transform: uppercase; /* Matches the text transform of the carousel caption h5 */
+  margin-bottom: 15px; /* Matches the margin bottom of the carousel caption h5 */
+}
+
+.card-body {
+  background-color: rgba(92,154,190,0.8); /* Matches the background of the carousel caption */
+  height: auto;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Matches the text shadow of the carousel caption */
+  border-radius: 15px; /* Matches the rounded borders of the carousel caption */
+  animation: fadeIn 2s; /* Fade in text */
+  color: white !important; /* Matches the text color of the carousel caption */
+  font-size: 1.2em; /* Matches the font size of the carousel caption */
+  line-height: 1.5; /* Matches the line height of the carousel caption */
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.custom-toggler-icon span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+/* Add a keyframes animation */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade-in-on-load {
+  animation: fadeIn 2s;
+}
+
+.no-margin-padding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.requisitos-section {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 900px; /* adjust this value according to your needs */
+  padding: 1em;
+  color: #333;
+}
+
+.requisitos-section section {
+  margin-bottom: 2em;
+}
+
+.requisitos-section h1 {
+  font-size: 2em;
+  color: #5c9abe;
+  margin-bottom: 1em;
+}
+
+.requisitos-section h2 {
+  font-size: 1.6em;
+  color: #5c9abe;
+  margin-bottom: 0.8em;
+}
+
+.requisitos-section p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.requisitos-section ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.requisitos-section ul li {
+  margin-bottom: 0.5em;
+}
+
+.requisitos-section h3 {
+  font-size: 1.4em;
+  color: #5c9abe;
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+}
+
+footer {
+  width: 100%;
+  height: 25px;
+  background-color: #333; /*Change this color to match your theme*/
+  color: #fff; /*Change this color to match your theme*/
+  text-align: center;
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+  font-family: Arial, sans-serif; /*Change this font family to match your theme*/
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem; /*Change this font size if you want*/
+}
+
+#requisitos {
+    scroll-margin-top: 60px;
+}
+#servicios {
+    scroll-margin-top: 80px;
+}
